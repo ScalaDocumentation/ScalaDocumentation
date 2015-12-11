@@ -48,3 +48,8 @@ ScalaMeta has an extensible api to explore scala programs AST. In the tutorial r
 * [Trees](https://github.com/scalameta/scalameta/blob/master/scalameta/trees/src/main/scala/scala/meta/Trees.scala)
 
 It's possible to create a sbt plugin to extract an abstract syntax tree (Ast) from any library. However, we need a way to serialize scalameta Ast models in order to query them later.
+
+## Related Work
+
+* [scala-search](http://scala-search.org/)
+* [scalex](https://github.com/ornicar/scalex)
