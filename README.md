@@ -16,7 +16,7 @@ Nothing is implemented yet, but here are examples of the kind of things we'd lik
 
 ### By method name
 
-Even when I do know the name of the method because I'm looking at it, the ScalaDoc workflow for getting to the documentation of this method has a lot of room for improvement. First, I need to guess which library the method is from and find the ScalaDoc url for that library. Then, the ScalaFox search box only searches for objects and classes, so I must instead click on the first letter of the method name, then use my browser's search functionality to find that name, open all the classes which are listed as containing that method, search for that method in each of those, and compare the method types to figure out which one I'm looking for.
+Even when I do know the name of the method because I'm looking at it, the ScalaDoc workflow for getting to the documentation of this method has a lot of room for improvement. First, I need to guess which library the method is from and find the ScalaDoc url for that library. Then, the ScalaDoc search box only searches for objects and classes, so I must instead click on the first letter of the method name, then use my browser's search functionality to find that name, open all the classes which are listed as containing that method, search for that method in each of those, and compare the method types to figure out which one I'm looking for.
 
 The workflow I'd like to have instead: I type the name of the method, and I get back a list of method signatures with that name.
 
