@@ -39,3 +39,12 @@ Ideally I'd like a query for `A => B` to match all of the following:
 * `trait Convert[AA,BB] { val f: AA => BB }; object AtoB extends Convert[A,B]`
 
 I would also like the queries `A1 => A2 => B` and `A2 => A1 => B` to return the same set of results.
+
+## Enabling Technology
+
+ScalaMeta has an extensible api to explore scala programs AST. In the tutorial repository we find [an example](https://github.com/scalameta/tutorial/tree/exploring-semantics) on how to iterate over source. The user of scalameta works on two principles:
+
+* [API](https://github.com/scalameta/scalameta/blob/master/scalameta/semantic/src/main/scala/scala/meta/semantic/Api.scala#L22)
+* [Trees](https://github.com/scalameta/scalameta/blob/master/scalameta/trees/src/main/scala/scala/meta/Trees.scala)
+
+It's possible to create a sbt plugin to extract an abstract syntax tree (Ast) from any library. However, we need a way to serialize scalameta Ast models in order to query them later.
