@@ -37,6 +37,7 @@ Ideally I'd like a query for `A => B` to match all of the following:
 * `class A { def b(): B }`
 * `case class RichA(a: A) { val b: B }`
 * `trait Convert[AA,BB] { val f: AA => BB }; object AtoB extends Convert[A,B]`
+* `implicit` to `T` then any of the above from `T` to `B`
 
 I would also like the queries `A1 => A2 => B` and `A2 => A1 => B` to return the same set of results.
 
