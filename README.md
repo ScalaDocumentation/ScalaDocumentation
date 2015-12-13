@@ -53,3 +53,4 @@ It's possible to create a sbt plugin to extract an abstract syntax tree (Ast) fr
 
 * [scala-search](http://scala-search.org/)
 * [scalex](https://github.com/ornicar/scalex)
+* [Graphpocolypse](https://github.com/ensime/ensime-server/issues/1133)
